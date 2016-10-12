@@ -7,14 +7,14 @@
 
 search_terms = []
 get_all_project_cookbooks.each do |cookbook|
-  search_terms << "recipes:#{cookbook.name}*"
+  search_terms << "recipe:#{cookbook.name}*"
 end
 
 log "Search_Terms: #{search_terms}"
 
 unless search_terms.empty?
   search_query = "(#{search_terms.join(' OR ')}) " \
-                 "AND chef_environment:#{delivery_environment} "
+                 "AND chef_environment:#{delivery_environment}"
 
                  log "Search_Query: #{search_query}"
 
