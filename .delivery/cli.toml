@@ -1,0 +1,7 @@
+api_protocol = "https"
+enterprise = "Summit"
+git_port = "8989"
+organization = "chef-summit"
+pipeline = "master"
+server = "ec2-52-210-74-0.eu-west-1.compute.amazonaws.com"
+user = "yvo"
