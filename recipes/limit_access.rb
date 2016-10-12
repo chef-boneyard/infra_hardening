@@ -5,7 +5,7 @@
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
 
-paths = %w(/usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin) + node['os-hardening']['env']['extra_user_paths']
+paths = %w(/usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin)
 paths.each do |folder|
   execute "remove write permission from #{folder}" do
     command "chmod go-w -R #{folder}"
@@ -25,5 +25,4 @@ file '/bin/su' do
   owner 'root'
   group 'root'
   mode '0750'
-  not_if { node['os-hardening']['security']['users']['allow'].include?('change_user') }
 end
