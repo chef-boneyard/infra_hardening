@@ -14,8 +14,7 @@ log "Search_Terms: #{search_terms}"
 
 unless search_terms.empty?
   search_query = "(#{search_terms.join(' OR ')}) " \
-                 "AND chef_environment:#{delivery_environment} " \
-                 "AND #{deployment_search_query}"
+                 "AND chef_environment:#{delivery_environment} "
 
                  log "Search_Query: #{search_query}"
 
