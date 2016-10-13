@@ -2,7 +2,7 @@
 # Cookbook Name:: infra_hardening
 # Recipe:: limit_access
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright (c) 2016 Yvo van Doorn, All Rights Reserved.
 
 
 paths = %w(/usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin)

@@ -2,7 +2,7 @@
 # Cookbook Name:: infra_hardening
 # Recipe:: purge_telnet
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright (c) 2016 Yvo van Doorn, All Rights Reserved.
 
 case node['platform']
   when 'debian', 'ubuntu'

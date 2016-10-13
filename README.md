@@ -1,3 +1,3 @@
 # infra_hardening
 
-Cookbook hardens the infrastructure
+Basic cookbook to harden your infrastructure
