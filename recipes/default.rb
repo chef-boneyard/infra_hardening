@@ -2,7 +2,7 @@
 # Cookbook Name:: infra_hardening
 # Recipe:: default
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright (c) 2016 Yvo van Doorn, All Rights Reserved.
 
 # Remove Telnet
 # include_recipe 'infra_hardening::purge_telnet'
